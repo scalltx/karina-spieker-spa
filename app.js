@@ -30,4 +30,5 @@ if('IntersectionObserver' in window && !motionPreference.matches){
 }
 document.querySelectorAll('.faq-list details').forEach(details=>details.addEventListener('toggle',()=>{if(details.open&&!motionPreference.matches)details.querySelector('p').animate([{opacity:0,transform:'translateY(-6px)'},{opacity:1,transform:'translateY(0)'}],{duration:300,easing:'ease-out'})}));
 const dialog=document.querySelector('#privacy-dialog');document.querySelector('#privacy').addEventListener('click',()=>dialog.showModal());document.querySelector('#close-dialog').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});document.querySelector('#year').textContent=new Date().getFullYear();
+document.querySelectorAll('#services img').forEach(img=>{img.loading='eager';img.style.minHeight='100%';img.style.height='100%';img.style.objectFit='cover'});
 
