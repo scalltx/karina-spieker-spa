@@ -22,4 +22,5 @@
 .service-photo{background:url('assets/hero.png') center/cover no-repeat}
 .service-photo img{opacity:0}
 .service-photo,.service:nth-child(2) .service-photo,.service:nth-child(5) .service-photo{border-radius:16px!important}
+.service-photo{background-color:#6a5b4b;background-blend-mode:multiply}
 
